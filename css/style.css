@@ -24,7 +24,6 @@
 
 body {
     margin: 0;
-    padding: 0;
     background-color: #c2f970;
 }
 
@@ -104,8 +103,10 @@ nav a:hover {
 }
 
 .iten-left h2 {
+    font-size: 200%;
     font-family: 'title';
     color: black;
+    text-decoration: underline;
 }
 
 .iten-left p {
@@ -133,6 +134,7 @@ footer {
     background:#00e640;
     padding: 20px 0px 0px 50px;
     display: flex;
+    align-items: center;
     color: white;
     width: auto;
 }
