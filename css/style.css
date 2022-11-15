@@ -12,15 +12,25 @@
     src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'title';
+    src: url(/fonts/Dancing_Script/DancingScript-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'menu';
+    src: url(/fonts/Dancing_Script/DancingScript-Medium.ttf);
+}
+
 body {
     margin: 0;
-    background-color: grey;
-    color: white;
+    padding: 0;
+    background-color: #c2f970;
 }
 
 nav {
     display: flex;
-    background: #b2de27;
+    background: #00e640;
     padding: 20px;
     column-gap: 10px;
     align-items: center;
@@ -28,7 +38,7 @@ nav {
 
 nav span {
     color: white;
-    font-family: 'bold';
+    font-family: 'title';
     font-size: 200%;
 }
 
@@ -37,10 +47,11 @@ nav a:first-of-type {
 }
 
 nav a {
-    font-size: 150%;
+    font-size: 180%;
     color: white;
-    font-family: 'regular';
+    font-family: 'menu';
     text-decoration: none;
+    font-weight: 300;
 }
 
 nav a:hover {
@@ -69,7 +80,7 @@ nav a:hover {
 
 #main-text h1 {
     margin: 0 auto;
-    font-family: 'bold';
+    font-family: 'title';
     font-size: 295%;
 }
 
@@ -93,12 +104,14 @@ nav a:hover {
 }
 
 .iten-left h2 {
-    font-family: 'bold';
+    font-family: 'title';
+    color: black;
 }
 
 .iten-left p {
     font-family: 'regular';
     font-size: 120%;
+    color: black;
 }
 
 .iten-right {
@@ -110,24 +123,27 @@ nav a:hover {
 
 .iten-right img {
     width: 80%;
-    animation: fadeIn 10s infinite; 
+    animation: fadeIn 10s;
     border-radius: 20px;
     box-shadow: 2px 2px 5px black;
 }
 
 /*Rodapé*/
 footer {
-    background: #b2de27;
-    padding: 20px 0px 0px 100px ;
+    background:#00e640;
+    padding: 20px 0px 0px 50px;
     display: flex;
     color: white;
+    width: auto;
 }
 
 #copyright {
     display: flex;
-    flex-direction:row;
     align-items: center;
-    margin: 0 auto;
+    position: relative;
+    float: right;
+    margin-left: auto;
+    margin-right: 15px;
 }
 
 #copyright span {
