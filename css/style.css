@@ -1,0 +1,143 @@
+:root {
+    --main-image: url(../imgs/buques.jpg);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(..//fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+    color: white;
+}
+
+nav {
+    display: flex;
+    background: #b2de27;
+    padding: 20px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+nav span {
+    color: white;
+    font-family: 'bold';
+    font-size: 200%;
+}
+
+nav a:first-of-type {
+    margin-left: auto;
+}
+
+nav a {
+    font-size: 150%;
+    color: white;
+    font-family: 'regular';
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #454848;
+}
+
+#main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    var(--main-image);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    position: relative;
+}
+
+#main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+#main-text h1 {
+    margin: 0 auto;
+    font-family: 'bold';
+    font-size: 295%;
+}
+
+#main-text p {
+    font-family: 'regular';
+    font-size: 200%;
+}
+
+/*Container*/
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.iten-left {
+    width: 60%;
+}
+
+.iten-left h2 {
+    font-family: 'bold';
+}
+
+.iten-left p {
+    font-family: 'regular';
+    font-size: 120%;
+}
+
+.iten-right {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.iten-right img {
+    width: 80%;
+    animation: fadeIn 10s infinite; 
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+/*Rodapé*/
+footer {
+    background: #b2de27;
+    padding: 20px 0px 0px 100px ;
+    display: flex;
+    color: white;
+}
+
+#copyright {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#copyright span {
+    font-family: 'bold';
+}
+
+#endereco {
+    font-family: 'regular';
+}
+
+#endereco h3 {
+    font-family: 'bold';
+}
