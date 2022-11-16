@@ -1,9 +1,10 @@
-#title{
+#title {
     display: flex;
     margin: 0 auto;
     justify-content: center;
 }
-#title h2{
+
+#title h2 {
     font-size: 300%;
     font-family: 'title';
     text-decoration: underline;
@@ -21,7 +22,7 @@
     width: 60%;
     height: auto;
     border-radius: 20px;
-    box-shadow: -2px -2px 5px black , 2px 2px 5px black;
+    box-shadow: -2px -2px 5px black, 2px 2px 5px black;
     margin-bottom: 15px;
 }
 
@@ -35,22 +36,83 @@
     height: auto;
 }
 
-.card:hover{
+.card:hover {
     transition: all .5s;
     border: 2px solid green;
     border-radius: 20%;
 }
 
-.card img { 
+.card img {
     align-items: center;
     width: 70%;
 }
 
-.card h3{ 
+.card h3 {
     border-radius: 30px;
     margin: 0 auto;
     width: 50%;
-    font-size: 1.5em;   
+    font-size: 1.5em;
     font-family: 'title';
-    border: 2px solid black;   
+    border: 2px solid black;
+    animation: move 3s infinite linear;
+}
+.card h3:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    animation: none;
+}
+
+@media screen and (max-width: 1200px) {
+    #title {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #title h2 {
+        font-size: 250%;
+        font-family: 'title';
+        text-decoration: underline;
+        color: black;
+    }
+
+
+    #cards {
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        box-shadow: 0px 0px;
+    }
+
+    .card {
+        padding: 0px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #ffff;
+        width: 80%;
+        height: auto;
+    }
+
+    .card:hover {
+        transition: all .5s;
+        border: 2px solid green;
+        border-radius: 20%;
+    }
+
+    .card img {
+        align-items: center;
+        width: 90%;
+    }
+
+    .card h3 {
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        width: 50%;
+        font-size: 2rem;
+        font-family: 'title';
+        border: 2px solid black;
+    }
 }
